@@ -53,7 +53,7 @@ amalgus/
 
 ---
 
-## 🧠 How Intelligent Matching Works
+## How Intelligent Matching Works
 
 Two-stage pipeline:
 
