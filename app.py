@@ -17,19 +17,37 @@ st.markdown("""
 
 html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; }
 
-.hero-title {
+.hero-title{
     font-family: 'DM Serif Display', serif;
-    font-size: 3rem;
-    line-height: 1.1;
-    color: #0a1628;
-    margin-bottom: 0.25rem;
+    font-size: 3.3rem;
+    line-height: 1.15;
+    color: #ffffff !important;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.5px;
+    font-weight: 700;
 }
-.hero-sub {
-    color: #4a6080;
-    font-size: 1.05rem;
-    font-weight: 300;
+
+.hero-title span{
+    background: linear-gradient(135deg,#38b2d8,#60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-sub{
+    color: #d6e4ff !important;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 850px;
+    margin-top: 0.4rem;
     margin-bottom: 2rem;
 }
+
+.hero-highlight{
+    color: #38b2d8;
+    font-weight: 600;
+}
+
 .badge {
     display: inline-block;
     background: #e8f4f8;
@@ -112,7 +130,7 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; }
 .stButton>button:hover { opacity: 0.88; }
 .sidebar-label {
     font-weight: 600;
-    color: #0a1628;
+    color: #38bdf8;
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -241,6 +259,7 @@ if search_clicked and query.strip():
 
 elif search_clicked:
     st.warning("Please enter a requirement before searching.")
+
 
 st.markdown("---")
 st.caption("AmalGus Marketplace · AI-Powered Glass Discovery · Prototype v1.0")
