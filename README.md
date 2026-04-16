@@ -1,4 +1,4 @@
-# 🪟 AmalGus – Smart Glass Product Discovery
+# AmalGus – Smart Glass Product Discovery
 
 AI-powered B2B/B2C marketplace prototype for the glass industry.  
 Buyers describe their requirements in natural language and instantly get ranked, explainable product matches.
