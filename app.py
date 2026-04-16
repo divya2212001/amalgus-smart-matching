@@ -5,7 +5,7 @@ from matching_engine import MatchingEngine
 
 st.set_page_config(
     page_title="AmalGus - Smart Glass Discovery",
-    page_icon="🪟",
+    # page_icon="🪟",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -149,10 +149,13 @@ engine = load_engine()
 # Heaader and query input
 col_logo, col_space = st.columns([1, 3])
 with col_logo:
-    st.markdown("### 🪟 **AmalGus**")
+    st.markdown(
+        "<h1 style='font-size:48px; font-weight:800; margin:0;'>AmalGus</h1>",
+        unsafe_allow_html=True
+    )
 
-st.markdown('<p class="hero-title">Find the Right Glass,<br><i>Instantly.</i></p>', unsafe_allow_html=True)
-st.markdown('<p class="hero-sub">Describe what you need in plain language — our AI matches you with the best suppliers.</p>', unsafe_allow_html=True)
+st.markdown('<p class="hero-title">Find the Right Glass instantly.</p>', unsafe_allow_html=True)
+st.markdown('<p class="hero-sub">Describe your requirements in natural language, and let our AI-powered engine find the best matches from top suppliers across India. No more endless searching – just accurate results with clear explanations.</p>', unsafe_allow_html=True)
 
 # Sidebar filters 
 with st.sidebar:
